@@ -88,7 +88,7 @@ function GameHubApp() {
     return (
         <>
             {isLogin ? (
-                <Router>
+                <Router basename='/gamehub-react-app'>
                     <div className="bg-dark vh-100 vw-100 text-white" style={{ overflowY: 'auto' }}>
                         <NavBar onSubmit={onSearch} onLogout={onLogout} />
                         <div className="d-flex">
