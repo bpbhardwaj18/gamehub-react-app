@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Vite + React</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the query parameter (containing the path from the 404.html redirect)
+      // and restores it to the URL using history.replaceState, allowing React Router to handle it.
+      (function(l) {
+        if (l.search === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function(s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <!-- Your other head elements like meta tags, title, link tags go here -->
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
