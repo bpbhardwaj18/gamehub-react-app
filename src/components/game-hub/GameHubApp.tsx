@@ -3,7 +3,6 @@ import LeftNav from "./LeftNav";
 import NavBar from "./NavBar";
 import Home from './Home';
 import React, { useEffect, useState } from 'react';
-import Main from './Main';
 import MainPage from './MainPage';
 import Login from './Login';
 import axios from 'axios';

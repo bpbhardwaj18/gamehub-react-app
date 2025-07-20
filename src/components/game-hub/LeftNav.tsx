@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Main from "./Main";
+
 
 interface Props {
     list: string[]
